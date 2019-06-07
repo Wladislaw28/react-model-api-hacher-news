@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Title from '../components/title/title';
 import NewsPost from '../components/news_post/news_post';
 import Input from '../components/input/input';
+import Select from '../components/select/select';
 
 const BASE_PATH = 'https://hn.algolia.com/api/v1';
 const SEARCH_PATH = '/search';
@@ -78,7 +79,7 @@ class News extends React.Component{
 		return(
 			<div className="wrapper">
 				<Title title="Hacker News" />
-
+				<Select handleChange={this.handleHitsChange} options={HITS} value={hitsPerPage} />
 				<Input onKeyPress={this.getSearch} onChange={this.handleInputChange} value={searchQuery} />
 				<ul className="newsList">
 					{hits.map(({ author, created_at, num_comments, objectID, title, points, url }) =>

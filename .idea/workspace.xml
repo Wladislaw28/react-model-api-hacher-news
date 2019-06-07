@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9792f1-049f-4ee9-a5dc-db44381fda75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input/input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/input/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/news_post/news_post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/news_post/news_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/select/select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/select/select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/title/title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/title/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/News.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/select/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/select/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/select/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/select/select.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,24 +27,26 @@
         <counts>
           <entry key="css" value="11" />
           <entry key="js" value="15" />
+          <entry key="json" value="1" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="11" />
+          <entry key="JSON" value="1" />
           <entry key="JavaScript" value="15" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1671" />
+          <entry key="js" value="1871" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1671" />
+          <entry key="JavaScript" value="1871" />
         </counts>
       </usages-collector>
     </session>
@@ -79,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/News.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="1702">
               <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -88,14 +74,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/select/select.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/select/select.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -118,6 +103,8 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/news/news.js" />
         <option value="$PROJECT_DIR$/src/containers/News.js" />
+        <option value="$PROJECT_DIR$/src/components/select/select.js" />
+        <option value="$PROJECT_DIR$/src/components/select/select.css" />
       </list>
     </option>
   </component>
@@ -212,12 +199,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559918130233</updated>
-      <workItem from="1559918132185" duration="6249000" />
+      <workItem from="1559918132185" duration="7031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6249000" />
+    <option name="totallyTimeSpent" value="7031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -334,9 +321,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/select/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/News.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1702">
           <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -344,11 +344,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/select/select.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/select/select.css">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
