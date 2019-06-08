@@ -5,6 +5,7 @@ import NewsPost from '../components/news_post/news_post';
 import Input from '../components/input/input';
 import Select from '../components/select/select';
 import Pagination from '../components/pagination/pagination';
+import './News.css';
 
 const BASE_PATH = 'https://hn.algolia.com/api/v1';
 const SEARCH_PATH = '/search';
@@ -25,7 +26,7 @@ const HITS = [
 		value: 30,
 		label: 30
 	}
-]
+];
 
 class News extends React.Component{
 
@@ -112,6 +113,9 @@ class News extends React.Component{
 
 		return(
 			<div className="wrapper">
+				<div className="div_hacker_p">
+					<p className="p_hacker"> With the help of Yauhen Kavalchuk</p>
+				</div>
 				<Title title="Hacker News" />
 				<Select handleChange={this.handleHitsChange} options={HITS} value={hitsPerPage} />
 				<Pagination

@@ -1,38 +1,163 @@
-.inputWrapper {
-	position: relative;
-	border-bottom: 1px solid #ededed;
-	flex: 1 0 100%;
-}
+/*.inputWrapper {*/
+	/*position: relative;*/
+	/*border-bottom: 1px solid white;*/
+	/*flex: 1 0 100%;*/
+/*}*/
+
+/*.input {*/
+	/*font-family: Oswald, sans-serif;*/
+	/*padding: 16px 16px 16px 60px;*/
+	/*border: none;*/
+	/*background: rgba(0, 0, 0, 0.04);*/
+	/*width: 100%;*/
+	/*box-sizing: border-box;*/
+	/*font-size: 28px;*/
+	/*color: white;*/
+/*}*/
+
+/*.input::-webkit-input-placeholder {*/
+	/*font-family: Oswald, sans-serif;*/
+	/*color: white;*/
+/*}*/
+/*.input::-moz-placeholder {*/
+	/*font-family: Oswald, sans-serif;*/
+	/*color: white;*/
+/*}*/
+/*.input:-moz-placeholder {*/
+	/*font-family: Oswald, sans-serif;*/
+	/*color: white;*/
+/*}*/
+/*.input:-ms-input-placeholder {*/
+	/*font-family: Oswald, sans-serif;*/
+	/*color: white;*/
+/*}*/
 
 .input {
-	font-family: 'Indie Flower', cursive;
-	padding: 16px 16px 16px 60px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 100%;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
 	border: none;
-	background: rgba(0, 0, 0, 0.003);
+	border-radius: 0;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: black;
+	font-weight: bold;
+	font-size: 82.25%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
 	width: 100%;
-	box-sizing: border-box;
-	font-size: 28px;
-	font-style: italic;
-	box-shadow: inset 0 -2px 40px rgba(0,0,0,0.03);
 }
 
-.fa-search {
+
+
+.input__field--yoko {
+	z-index: 10;
+	width: 100%;
+	background: transparent;
+	color: black;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	font-size: 21px;
+}
+
+.input__label--yoko {
+	position: relative;
+	width: 100%;
+	color: white;
+	text-align: left;
+}
+
+.input__label--yoko::before {
+	content: '';
 	position: absolute;
-	font-size: 24px;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 20px;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 5em;
+	background: #c5564a;
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
 }
 
-.input::-webkit-input-placeholder {
-	font-family: 'Indie Flower', cursive;
+.input__label--yoko::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.25em;
+	background: #ad473c;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
 }
-.input::-moz-placeholder {
-	font-family: 'Indie Flower', cursive;
+
+.input__label-content--yoko {
+	padding: 0.75em 0;
 }
-.input:-moz-placeholder {
-	font-family: 'Indie Flower', cursive;
+
+.input__field--yoko:focus,
+.input--filled .input__field--yoko {
+	opacity: 1;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
 }
-.input:-ms-input-placeholder {
-	font-family: 'Indie Flower', cursive;
+
+.input__field--yoko:focus + .input__label--yoko::before,
+.input--filled .input__label--yoko::before {
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+}
+
+.input__field--yoko:focus + .input__label--yoko,
+.input--filled .input__label--yoko {
+	pointer-events: none;
+}
+
+.input__field--yoko:focus + .input__label--yoko::after,
+.input--filled .input__label--yoko::after {
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
 }

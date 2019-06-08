@@ -1,8 +1,71 @@
-.title {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 80px;
+/*.title {*/
+	/*font-family: 'Raleway', sans-serif;*/
+	/*font-size: 80px;*/
+	/*text-align: center;*/
+	/*font-weight: 900;*/
+	/*color: white;*/
+	/*margin-bottom: 20px;*/
+/*}*/
+
+.link {
 	text-align: center;
+	margin-top: 100px;
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #c5564a;
+	display: inline-block;
+}
+
+/* Kukuri */
+.link--kukuri {
+	text-transform: uppercase;
 	font-weight: 900;
-	color: rgba(175, 47, 47, 0.15);
-	margin-bottom: 20px;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #ffffff;
+}
+
+.link--kukuri:hover {
+	color: #c5564a;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: black;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	-webkit-transition: width 0.4s 0.3s;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
 }

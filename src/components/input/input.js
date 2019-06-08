@@ -3,14 +3,18 @@ import PropTypes from 'prop-types';
 import './input.css';
 
 const Input = ({onChange, value , onKeyPress}) => (
-	<div className="inputWrapper">
-		<i className="fas fa-search" />
-		<input className="input"
-				placeholder="Click to search"
+	<span className="input input--minoru">
+		<div className="inputWrapper">
+			<input className="input__field input__field--yoko"
+			   placeholder="Click to search"
 			   onChange={onChange}
-				onKeyPress={onKeyPress}
-				value={value}/>
-	</div>
+			   onKeyPress={onKeyPress}
+			   value={value}/>
+			<label className="input__label input__label--yoko" htmlFor="input-16">
+				<span className="input__label-content input__label-content--yoko">Click to search</span>
+			</label>
+		</div>
+	</span>
 );
 
 Input.propTypes = {

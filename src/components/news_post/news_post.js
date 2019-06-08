@@ -9,7 +9,7 @@ const NewsPost = ({author, created_at, num_comments, title, points, url}) => (
 			<span className="text">{`${points} points`}</span>
 			<span className="comments">{`${num_comments} comments`}</span>
 			<span className="date">{new Date(created_at).toLocaleDateString()}</span>
-			<span className="author">{author}</span>
+			<span className="author">author: {author}</span>
 		</div>
 	</li>
 );

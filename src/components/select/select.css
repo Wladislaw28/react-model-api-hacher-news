@@ -2,14 +2,16 @@
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 20px 40px;
-	background-color: #fff;
+	background-color: black;
 }
 
 .selectWrapper,
 .selectWrapper select {
 	font-size: 20px;
+
 }
 
 .selectText {
 	margin-left: 10px;
+	color: white;
 }
